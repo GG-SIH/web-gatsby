@@ -24,26 +24,57 @@ const ServiceSelector = (props) => {
   };
   return (
     <>
-      <Card
-        className="text-center justify-content-center align-items-center"
-        onClick={sendServiceName}
-      >
-        <Col lg="12">
-          <img src={props.img} alt="" />
-        </Col>
-        <Col lg="12">
-          <Box>
-            <Text
+      {props.both ? (
+        <Card
+          className="text-center justify-content-center align-items-center"
+          onClick={sendServiceName}
+        >
+          <Col lg="12">
+            <img src={props.img1} alt="Fire brigade" />
+            <img
+              src={props.img2}
+              alt="ambulance"
               css={`
-                margin-top: 1em;
-                font-size: 21px;
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
               `}
-            >
-              {props.serviceName}
-            </Text>
-          </Box>
-        </Col>
-      </Card>
+            />
+          </Col>
+          <Col lg="12">
+            <Box>
+              <Text
+                css={`
+                  margin-top: 1em;
+                  font-size: 21px;
+                `}
+              >
+                {props.serviceName}
+              </Text>
+            </Box>
+          </Col>
+        </Card>
+      ) : (
+        <Card
+          className="text-center justify-content-center align-items-center"
+          onClick={sendServiceName}
+        >
+          <Col lg="12">
+            <img src={props.img} alt="" />
+          </Col>
+          <Col lg="12">
+            <Box>
+              <Text
+                css={`
+                  margin-top: 1em;
+                  font-size: 21px;
+                `}
+              >
+                {props.serviceName}
+              </Text>
+            </Box>
+          </Col>
+        </Card>
+      )}
     </>
   );
 };

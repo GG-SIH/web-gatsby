@@ -28,6 +28,10 @@ const Card = styled.div`
 `;
 
 const DetailsCard = (props) => {
+  let text = "";
+  if (props.service === "Ambulance and Fire Brigade")
+    text = `The ${props.service} are on their way`;
+  else text = `The ${props.service} is on it's way`;
   return (
     <>
       <Card className="text-center justify-content-center align-items-center">
@@ -38,7 +42,7 @@ const DetailsCard = (props) => {
                 font-size: 21px;
               `}
             >
-              The {props.service} is on it's way
+              {text}
             </Text>
             <p
               css={`

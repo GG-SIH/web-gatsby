@@ -8,6 +8,7 @@ import Map from "../../../components/ETAMap/Map1";
 
 const PostConf = (props) => {
   const MapLoader = withScriptjs(Map);
+
   return (
     <>
       <Section>
@@ -30,7 +31,7 @@ const PostConf = (props) => {
                 >
                   {props.service}
                 </span>{" "}
-                is on it's way
+                is (are) on it's way
               </Text>
             </Col>
           </Row>

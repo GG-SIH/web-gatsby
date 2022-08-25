@@ -31,7 +31,6 @@ import Content2 from "../sections/main/Content2";
 import Content3 from "../sections/main/Content3";
 import Fact from "../sections/main/Fact";
 
-import CTA from "../sections/main/CTA";
 import PageWrapper from "../components/PageWrapper";
 
 const IndexPage = () => {
@@ -44,7 +43,6 @@ const IndexPage = () => {
         <Content2 />
         <Content3 />
         <Fact />
-        <CTA />
       </PageWrapper>
     </>
   );

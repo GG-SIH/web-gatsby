@@ -116,6 +116,51 @@ const Footer = ({ isDark = true }) => {
                       </UlStyled>
                     </div>
                   </Col>
+                  <Col xs="6" lg="3">
+                    <div className="mb-5 mb-lg-4">
+                      <TitleStyled
+                        variant="card"
+                        color={isDark ? "light" : "dark"}
+                      >
+                        Services
+                      </TitleStyled>
+                      <UlStyled color={isDark ? "lightShade" : "darkShade"}>
+                        <li>
+                          <Link href={`../obd`}>
+                            <a
+                              className="nav-link"
+                              role="button"
+                              aria-expanded="false"
+                            >
+                              Onboarding
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href={`../demo`}>
+                            <a
+                              className="nav-link"
+                              role="button"
+                              aria-expanded="false"
+                            >
+                              Access Demo
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href={`../user-manual`}>
+                            <a
+                              className="nav-link"
+                              role="button"
+                              aria-expanded="false"
+                            >
+                              User Manual
+                            </a>
+                          </Link>
+                        </li>
+                      </UlStyled>
+                    </div>
+                  </Col>
                 </Row>
               </Col>
             </Row>
