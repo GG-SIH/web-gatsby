@@ -79,12 +79,10 @@ const Content1 = () => (
               data-aos-once="true"
             >
               <Box>
-                <Title>Insert sub title here</Title>
+                <Title>#3: Dispatching Services</Title>
                 <Text mb={4}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Doloremque cum aliquam impedit eos sunt aperiam delectus. Eum
-                  magnam, obcaecati praesentium commodi sunt, distinctio maxime
-                  architecto molestiae alias ullam vel maiores?
+                  Connects you to the Emergency Service Provider Dispatch by
+                  providing optimal and efficient routes.
                 </Text>
               </Box>
             </div>

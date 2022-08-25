@@ -79,12 +79,11 @@ const Content1 = () => (
               data-aos-once="true"
             >
               <Box>
-                <Title>Insert sub title here</Title>
+                <Title>#2: Divide and Notify</Title>
                 <Text mb={4}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Doloremque cum aliquam impedit eos sunt aperiam delectus. Eum
-                  magnam, obcaecati praesentium commodi sunt, distinctio maxime
-                  architecto molestiae alias ullam vel maiores?
+                  Receive Notifications to move out of the way in advance to
+                  ensure a clear route is provided for the Emergency Service
+                  Providers.
                 </Text>
               </Box>
             </div>

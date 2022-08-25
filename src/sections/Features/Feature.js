@@ -51,56 +51,50 @@ const Feature = () => (
       <Container>
         <Row className="align-items-center justify-content-center">
           <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-5">
-            <FeatureCard color="primary" iconName="🚑" title="Feature 1">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
-              facilis soluta ut, dolor eveniet aperiam temporibus excepturi
-              cupiditate asperiores tempore eos ullam ab quas facere minima
-              totam doloremque incidunt nam.
-            </FeatureCard>
+            <FeatureCard
+              color="primary"
+              iconName="🚑"
+              title="Multiple Services at Once"
+            ></FeatureCard>
           </Col>
 
           <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-5">
-            <FeatureCard color="primary" iconName="🚒" title="Feature 2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
-              facilis soluta ut, dolor eveniet aperiam temporibus excepturi
-              cupiditate asperiores tempore eos ullam ab quas facere minima
-              totam doloremque incidunt nam.
-            </FeatureCard>
+            <FeatureCard
+              color="primary"
+              iconName="⏩"
+              title="Fastest Route for ESP's to Reach you"
+            ></FeatureCard>
           </Col>
 
           <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-5">
-            <FeatureCard color="primary" iconName="🏥" title="Feature 3">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
-              facilis soluta ut, dolor eveniet aperiam temporibus excepturi
-              cupiditate asperiores tempore eos ullam ab quas facere minima
-              totam doloremque incidunt nam.
-            </FeatureCard>
+            <FeatureCard
+              color="primary"
+              iconName="☝️"
+              title="One tap is all you need."
+            ></FeatureCard>
           </Col>
 
           <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-5">
-            <FeatureCard color="primary" iconName="✈️" title="Feature 4">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
-              facilis soluta ut, dolor eveniet aperiam temporibus excepturi
-              cupiditate asperiores tempore eos ullam ab quas facere minima
-              totam doloremque incidunt nam.
-            </FeatureCard>
+            <FeatureCard
+              color="primary"
+              iconName="🆘"
+              title="Helping out those in need"
+            ></FeatureCard>
           </Col>
           <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-5">
-            <FeatureCard color="primary" iconName="🗺️" title="Feature 5">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
-              facilis soluta ut, dolor eveniet aperiam temporibus excepturi
-              cupiditate asperiores tempore eos ullam ab quas facere minima
-              totam doloremque incidunt nam.
-            </FeatureCard>
+            <FeatureCard
+              color="primary"
+              iconName="🏦"
+              title="Uplifting Society"
+            ></FeatureCard>
           </Col>
 
           <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-5">
-            <FeatureCard color="primary" iconName="📍" title="Feature 6">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
-              facilis soluta ut, dolor eveniet aperiam temporibus excepturi
-              cupiditate asperiores tempore eos ullam ab quas facere minima
-              totam doloremque incidunt nam.
-            </FeatureCard>
+            <FeatureCard
+              color="primary"
+              iconName="💗"
+              title="Literally Saving Lives!"
+            ></FeatureCard>
           </Col>
         </Row>
       </Container>

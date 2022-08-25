@@ -35,12 +35,13 @@ const Content1 = () => (
               data-aos-once="true"
             >
               <Box>
-                <Title>Insert some title here</Title>
+                <Title>How we stand out</Title>
                 <Text mb={4}>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Libero facilis soluta ut, dolor eveniet aperiam temporibus
-                  excepturi cupiditate asperiores tempore eos ullam ab quas
-                  facere minima totam doloremque incidunt nam.
+                  Save A Life (SAL) Maps is aimed at solving a pressing problem
+                  faced in metropolitan cities, focusing on dealing with heavy
+                  traffic congestion for emergency service providers (ESP) to
+                  commute faster in the hour of need by assisting users in three
+                  different cases.
                 </Text>
               </Box>
             </div>
@@ -96,12 +97,11 @@ const Content1 = () => (
               data-aos-once="true"
             >
               <Box>
-                <Title>Insert sub title here</Title>
+                <Title>#1: Offered Services</Title>
                 <Text mb={4}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Doloremque cum aliquam impedit eos sunt aperiam delectus. Eum
-                  magnam, obcaecati praesentium commodi sunt, distinctio maxime
-                  architecto molestiae alias ullam vel maiores?
+                  You can connect to our service providers in order to report a
+                  situation to avail the necessary emergency services like
+                  Ambulances and Fire Brigades.
                 </Text>
               </Box>
             </div>

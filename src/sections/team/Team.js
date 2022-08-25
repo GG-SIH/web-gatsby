@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Title, Section, Box, Text } from "../../components/Core";
 
 import imgU1 from "../../assets/image/jpeg/team.jpg";
+import t1 from "../../assets/image/stanley.webp";
 
 const CardImage = styled.div`
   max-width: 160px;
@@ -47,7 +48,7 @@ const Team = () => (
       <Container>
         <Row className="align-items-center justify-content-center">
           <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
-            <TeamCard userImg={imgU1} title="Anusha Chaturvedi">
+            <TeamCard userImg={t1} title="Anusha Chaturvedi">
               Team Leader, Full Stack Engineer
             </TeamCard>
           </Col>

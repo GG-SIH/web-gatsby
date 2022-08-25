@@ -61,8 +61,8 @@ const Hero = () => {
                 <Box className="text-center">
                   <Title variant="hero">Save a Life Maps</Title>
                   <Text mb={4} mt={3}>
-                    “It’s a great honor,” said Fedyor. “To save a life. You
-                    saved many.” <br />- Leigh Bardugo, Shadow and Bone
+                    To save, or not to save, the descision is yours. <br />-
+                    Unknown
                   </Text>
                 </Box>
               </div>
