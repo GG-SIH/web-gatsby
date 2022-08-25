@@ -31,7 +31,7 @@ const PostConf = (props) => {
                 >
                   {props.service}
                 </span>{" "}
-                is (are) on it's way
+                is (are) on it's (their) way
               </Text>
             </Col>
           </Row>
