@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
-
+import { Link } from "gatsby";
 import { Title, Button, Section, Box, Text } from "../../../components/Core";
 import { device } from "../../../utils";
 
@@ -59,14 +59,16 @@ const UC1 = (props) => {
               {text === "-" ? (
                 ""
               ) : (
-                <Button
-                  className="mt-3"
-                  onClick={() => {
-                    props.passService(service);
-                  }}
-                >
-                  Confirm Selection
-                </Button>
+                <Link to="http://127.0.0.1:5501/html/ETA.html">
+                  <Button
+                    className="mt-3"
+                    onClick={() => {
+                      props.passService(service);
+                    }}
+                  >
+                    Confirm Selection
+                  </Button>
+                </Link>
               )}
             </Col>
           </Row>

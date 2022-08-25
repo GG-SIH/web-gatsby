@@ -7,7 +7,7 @@ import { rgba } from "polished";
 const Card = styled.div`
   background: ${({ theme }) => rgba(theme.colors.primary, 0.5)};
   padding: 2%;
-  width: 50%;
+  width: 25%;
   border-radius: 15px;
   box-shadow: 0 32px 74px rgba(68, 77, 136, 0.2);
   transition: 0.5s;

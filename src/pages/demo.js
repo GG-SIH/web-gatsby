@@ -45,21 +45,29 @@ const Demo = () => {
               </Col>
             </Row>
             <hr />
-            {service === "" ? (
-              <UC1 passService={serviceSelected} />
-            ) : (
-              <PostConf service={service} />
-            )}
 
-            {service === "" ? (
+            {/* {service === "" ? (
               ""
             ) : (
               <>
                 <UC2 service={service} />
               </>
-            )}
+            )} */}
           </Container>
-          <UC3 />
+
+          {service === "" ? (
+            <UC1 passService={serviceSelected} />
+          ) : (
+            <PostConf service={service} />
+          )}
+
+          {/* {service === "" ? (
+            ""
+          ) : (
+            <>
+              <UC3 />
+            </>
+          )} */}
         </Section>
       </PageWrapper>
     </>

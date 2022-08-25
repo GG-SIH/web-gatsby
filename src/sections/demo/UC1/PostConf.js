@@ -5,6 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Title, Button, Section, Box, Text } from "../../../components/Core";
 import DetailsCard from "./DetailsCard";
 import GoogleMap from "../../../components/GoogleMap/GoogleMap";
+import GMAP1 from "../../../components/ChooseServiceMap/GMAP1";
 
 const PostConf = (props) => {
   return (
@@ -32,13 +33,20 @@ const PostConf = (props) => {
                 is on it's way
               </Text>
             </Col>
-
-            <Col sm="12" md="12" lg="12" className="position-static">
-              <GoogleMap />
-            </Col>
-            <DetailsCard service={props.service} />
           </Row>
         </Container>
+        <Row className="justify-content-center align-items-center text-center">
+          <Col sm="12" md="12" lg="12" className="position-static">
+            {/* <GoogleMap /> */}
+            <GMAP1 />
+          </Col>
+          <DetailsCard
+            service={props.service}
+            css={`
+              margin-top: 5%;
+            `}
+          />
+        </Row>
       </Section>
     </>
   );

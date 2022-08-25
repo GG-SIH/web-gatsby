@@ -331,7 +331,7 @@ const Header = ({ isDark = false }) => {
                 </Menu>
               </div>
             </div>
-            <div className="header-btns ml-auto ml-lg-0 d-none d-md-block">
+            {/* <div className="header-btns ml-auto ml-lg-0 d-none d-md-block">
               <Link href="../obd">
                 <a
                   className="btn-red"
@@ -345,7 +345,7 @@ const Header = ({ isDark = false }) => {
                   Visit Onboarding
                 </a>
               </Link>
-            </div>
+            </div> */}
             <div className="header-btns ml-3 ml-lg-3 d-none d-md-block">
               <Link href="../demo">
                 <a
