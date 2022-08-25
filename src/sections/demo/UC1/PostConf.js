@@ -7,12 +7,6 @@ import DetailsCard from "./DetailsCard";
 import GoogleMap from "../../../components/GoogleMap/GoogleMap";
 
 const PostConf = (props) => {
-  const [service, setService] = useState("");
-
-  let text = "-";
-  if (service === "Ambulance") text = "You chose to call an Ambulance";
-  else if (service === "Fire Brigade")
-    text = "You chose to call a Fire Brigade";
   return (
     <>
       <Section>
