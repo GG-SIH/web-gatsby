@@ -34,15 +34,15 @@ const UC1 = (props) => {
               <Text>choose either an ambulance or a fire truck</Text>
             </Col>
 
-            <Col sm="3" md="3" lg="3" className="order-lg-1"></Col>
-            <Col sm="3" md="3" lg="3" className="order-lg-2">
+            <Col sm="2" md="2" lg="2" className="order-lg-1"></Col>
+            <Col sm="4" md="4" lg="4" className="order-lg-2 mr-4">
               <ServiceSelector
                 img={Ambulance}
                 serviceName="Ambulance"
                 getService={getServiceName}
               />
             </Col>
-            <Col sm="3" md="3" lg="3" className="order-lg-2">
+            <Col sm="4" md="4" lg="4" className="order-lg-2 ml-4">
               <Box>
                 <ServiceSelector
                   img={FireTruck}
@@ -51,7 +51,7 @@ const UC1 = (props) => {
                 />
               </Box>
             </Col>
-            <Col sm="3" md="3" lg="3" className="order-lg-2"></Col>
+            <Col sm="2" md="2" lg="2" className="order-lg-2"></Col>
           </Row>
           <Row>
             <Col lg="12" className="mt-4 text-center">
