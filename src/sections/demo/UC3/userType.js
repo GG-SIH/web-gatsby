@@ -17,28 +17,29 @@ const Card = styled.div`
 `;
 
 const ServiceSelector = (props) => {
-  const sendServiceName = () => {
-    let service = props.serviceName;
-    props.getService(service);
-  };
   return (
     <>
-      <Card
-        className="text-center justify-content-center align-items-center"
-        onClick={sendServiceName}
-      >
+      <Card className="text-center justify-content-center align-items-center">
         <Col lg="12">
           <img src={props.img} alt="" />
         </Col>
         <Col lg="12">
           <Box>
-            <Text
+            <Title
               css={`
-                margin-top: 1em;
                 font-size: 21px;
               `}
             >
-              {props.serviceName}
+              {props.userType}
+            </Title>
+            <Text
+              css={`
+                margin-top: 1em;
+                line-height: 1;
+                font-size: 18px;
+              `}
+            >
+              {props.userDesc}
             </Text>
           </Box>
         </Col>

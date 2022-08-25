@@ -5,16 +5,19 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Title, Button, Section, Box, Text } from "../../../components/Core";
 import { device } from "../../../utils";
 
-import Ambulance from "../../../assets/image/png/amb.png";
+import U1 from "../../../assets/image/png/1.png";
+import U2 from "../../../assets/image/png/2.png";
+import U3 from "../../../assets/image/png/3.png";
+
 import FireTruck from "../../../assets/image/png/ft.png";
 
-import ServiceSelector from "./ServiceSelector";
+import ServiceSelector from "./userType";
 
-const UC1 = (props) => {
+const UC3 = (props) => {
   const [service, setService] = useState("");
-
-  const getServiceName = (serviceName) => {
+  const getUserName = (serviceName) => {
     setService(serviceName);
+    props.passService(serviceName);
   };
   let text = "-";
   if (service === "Ambulance") text = "You chose to call an Ambulance";
@@ -29,44 +32,39 @@ const UC1 = (props) => {
         >
           <Row className="align-items-center">
             <Col lg="12" className="mb-5 text-center">
-              <Title variant="secSm">Use Case #1</Title>
-              <Text>choose either an ambulance or a fire truck</Text>
+              <Title variant="secSm">Use Case #3</Title>
+              <Text>Types of Users</Text>
             </Col>
 
-            <Col sm="3" md="3" lg="3" className="order-lg-1"></Col>
-            <Col sm="3" md="3" lg="3" className="order-lg-2">
+            <Col sm="4" md="4" lg="4" className="order-lg-2">
               <ServiceSelector
-                img={Ambulance}
-                serviceName="Ambulance"
-                getService={getServiceName}
+                img={U1}
+                userType="Type #1"
+                userDesc="User ahead of the requested service on the same route"
               />
             </Col>
-            <Col sm="3" md="3" lg="3" className="order-lg-2">
+            <Col sm="4" md="4" lg="4" className="order-lg-2">
               <Box>
                 <ServiceSelector
-                  img={FireTruck}
-                  serviceName="Firetruck"
-                  getService={getServiceName}
+                  img={U2}
+                  userType="Type #2"
+                  userDesc="User behind the requested service on the same route"
                 />
               </Box>
             </Col>
-            <Col sm="3" md="3" lg="3" className="order-lg-2"></Col>
+            <Col sm="4" md="4" lg="4" className="order-lg-2">
+              <Box>
+                <ServiceSelector
+                  img={U3}
+                  userType="Type #3"
+                  userDesc="User along a different route than that of the requested service"
+                />
+              </Box>
+            </Col>
           </Row>
           <Row>
             <Col lg="12" className="mt-4 text-center">
               <Text>{text}</Text>
-              {text === "-" ? (
-                ""
-              ) : (
-                <Button
-                  className="mt-3"
-                  onClick={() => {
-                    props.passService(service);
-                  }}
-                >
-                  Confirm Selection
-                </Button>
-              )}
             </Col>
           </Row>
         </Container>
@@ -75,4 +73,4 @@ const UC1 = (props) => {
   );
 };
 
-export default UC1;
+export default UC3;
