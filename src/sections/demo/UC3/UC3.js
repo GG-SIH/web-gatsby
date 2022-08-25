@@ -24,50 +24,49 @@ const UC3 = (props) => {
   else if (service === "Firetruck") text = "You chose to call a Firetruck";
   return (
     <>
-      <Section>
-        <Container
-          css={`
-            margin-top: -5%;
-          `}
-        >
-          <Row className="align-items-center">
-            <Col lg="12" className="mb-5 text-center">
-              <Title variant="secSm">Use Case #3</Title>
-              <Text>Types of Users</Text>
-            </Col>
+      <Section
+        css={`
+          margin-top: -5%;
+          margin: 0 1%;
+        `}
+      >
+        <Row className="align-items-center">
+          <Col lg="12" className="mb-5 text-center">
+            <Title variant="secSm">Use Case #3</Title>
+            <Text>Types of Users</Text>
+          </Col>
 
-            <Col sm="4" md="4" lg="4" className="order-lg-2">
+          <Col sm="4" md="4" lg="4" className="order-lg-2">
+            <ServiceSelector
+              img={U1}
+              userType="Type #1"
+              userDesc="User ahead of the requested service on the same route"
+            />
+          </Col>
+          <Col sm="4" md="4" lg="4" className="order-lg-2">
+            <Box>
               <ServiceSelector
-                img={U1}
-                userType="Type #1"
-                userDesc="User ahead of the requested service on the same route"
+                img={U2}
+                userType="Type #2"
+                userDesc="User behind the requested service on the same route"
               />
-            </Col>
-            <Col sm="4" md="4" lg="4" className="order-lg-2">
-              <Box>
-                <ServiceSelector
-                  img={U2}
-                  userType="Type #2"
-                  userDesc="User behind the requested service on the same route"
-                />
-              </Box>
-            </Col>
-            <Col sm="4" md="4" lg="4" className="order-lg-2">
-              <Box>
-                <ServiceSelector
-                  img={U3}
-                  userType="Type #3"
-                  userDesc="User along a different route than that of the requested service"
-                />
-              </Box>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg="12" className="mt-4 text-center">
-              <Text>{text}</Text>
-            </Col>
-          </Row>
-        </Container>
+            </Box>
+          </Col>
+          <Col sm="4" md="4" lg="4" className="order-lg-2">
+            <Box>
+              <ServiceSelector
+                img={U3}
+                userType="Type #3"
+                userDesc="User along a different route than that of the requested service"
+              />
+            </Box>
+          </Col>
+        </Row>
+        <Row>
+          <Col lg="12" className="mt-4 text-center">
+            <Text>{text}</Text>
+          </Col>
+        </Row>
       </Section>
     </>
   );

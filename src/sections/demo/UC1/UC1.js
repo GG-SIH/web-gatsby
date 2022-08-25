@@ -18,7 +18,8 @@ const UC1 = (props) => {
   };
   let text = "-";
   if (service === "Ambulance") text = "You chose to call an Ambulance";
-  else if (service === "Firetruck") text = "You chose to call a Firetruck";
+  else if (service === "Fire Brigade")
+    text = "You chose to call a Fire Brigade";
   return (
     <>
       <Section>
@@ -45,7 +46,7 @@ const UC1 = (props) => {
               <Box>
                 <ServiceSelector
                   img={FireTruck}
-                  serviceName="Firetruck"
+                  serviceName="Fire Brigade"
                   getService={getServiceName}
                 />
               </Box>

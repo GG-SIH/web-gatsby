@@ -16,17 +16,13 @@ import PageWrapper from "../components/PageWrapper";
 import UC1 from "../sections/demo/UC1/UC1";
 import UC2 from "../sections/demo/UC2/UC2";
 import UC3 from "../sections/demo/UC3/UC3";
+import PostConf from "../sections/demo/UC1/PostConf";
 
 const Demo = () => {
   const [service, selectedService] = useState("");
-  const [ConfServ, SelConfServ] = useState("");
 
   const serviceSelected = (serviceName) => {
     selectedService(serviceName);
-  };
-
-  const confirmedServiceName = (confServ) => {
-    SelConfServ(confServ);
   };
 
   return (
@@ -49,19 +45,21 @@ const Demo = () => {
               </Col>
             </Row>
             <hr />
-            <UC1
-              passService={serviceSelected}
-              confirmedService={confirmedServiceName}
-            />
+            {service === "" ? (
+              <UC1 passService={serviceSelected} />
+            ) : (
+              <PostConf service={service} />
+            )}
+
             {service === "" ? (
               ""
             ) : (
               <>
-                <UC2 service={ConfServ} />
-                <UC3 />
+                <UC2 service={service} />
               </>
             )}
           </Container>
+          <UC3 />
         </Section>
       </PageWrapper>
     </>

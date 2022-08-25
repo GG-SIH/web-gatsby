@@ -11,7 +11,6 @@ import {
   EndSelect,
   StartSelect,
 } from "../../../components/Core";
-import DetailsCard from "./DetailsCard";
 
 const UC2 = (props) => {
   const [service, setService] = useState("");
@@ -88,7 +87,6 @@ const UC2 = (props) => {
             <Col lg={12} className="position-static">
               <GoogleMap />
             </Col>
-            <DetailsCard service={props.service} />
           </Row>
         </Container>
       </Section>
