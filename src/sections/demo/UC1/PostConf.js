@@ -4,12 +4,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import { withScriptjs } from "react-google-maps";
 import { Title, Button, Section, Box, Text } from "../../../components/Core";
 import DetailsCard from "./DetailsCard";
-import GoogleMap from "../../../components/GoogleMap/GoogleMap";
-// import Map1 from "../../../components/Map1/Map1";
-import Map2 from "../../../components/Map2/Map2";
+import Map from "../../../components/ETAMap/Map1";
 
 const PostConf = (props) => {
-  const MapLoader = withScriptjs(Map2);
+  const MapLoader = withScriptjs(Map);
   return (
     <>
       <Section>
@@ -47,8 +45,6 @@ const PostConf = (props) => {
               height: 10%;
             `}
           >
-            {/* <GoogleMap /> */}
-            {/* <Map1 /> */}
             <MapLoader
               googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcQSmBY1QhFLMcfDHsIFp5YEgdj6I_Ge8"
               loadingElement={<div style={{ height: `100%` }} />}

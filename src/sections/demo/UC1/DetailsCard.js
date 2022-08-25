@@ -9,20 +9,21 @@ const Card = styled.div`
   background: ${({ theme }) => rgba(theme.colors.primary, 0.5)};
   padding: 2%;
   width: 25%;
+  margin-top: 2.5%;
   border-radius: 15px;
   box-shadow: 0 32px 74px rgba(68, 77, 136, 0.2);
   transition: 0.5s;
   &:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10%);
   }
   @media ${device.sm} {
     width: 100%;
   }
   @media ${device.md} {
-    left: 50%;
+    width: 50%;
   }
   @media ${device.lg} {
-    left: 25%;
+    width: 25%;
   }
 `;
 

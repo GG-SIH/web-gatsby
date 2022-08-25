@@ -1,7 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Title, Section, Text, Box } from "../components/Core";
-import GlobalContext from "../context/GlobalContext";
 import PageWrapper from "../components/PageWrapper";
 import UC1 from "../sections/demo/UC1/UC1";
 import UC2 from "../sections/demo/UC2/UC2";
@@ -10,18 +9,32 @@ import PostConf from "../sections/demo/UC1/PostConf";
 
 const Demo = () => {
   const [service, selectedService] = useState("");
-
+  const [loc, setLoc] = useState("");
   const serviceSelected = (serviceName) => {
     selectedService(serviceName);
+    getLocation();
   };
 
-  const gContext = useContext(GlobalContext);
+  let yourLocation = "";
 
-  const openUserManual = (e) => {
-    e.preventDefault();
-    gContext.toggleUserManual();
-    console.log("opening modal");
-  };
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+      setLoc("Geolocation is not supported by this browser.");
+    }
+    console.log(navigator.geolocation.getCurrentPosition(showPosition));
+  }
+
+  function showPosition(position) {
+    console.log(position);
+    setLoc(
+      "Your location is Latitude: " +
+        position.coords.latitude +
+        " and Longitude: " +
+        position.coords.longitude
+    );
+  }
 
   return (
     <>
@@ -34,16 +47,7 @@ const Demo = () => {
                 <div className="banner-content">
                   <Title variant="hero">Save a Life Maps Demo</Title>
                 </div>
-                <a
-                  href="/"
-                  className="text-decoration-none"
-                  onClick={openUserManual}
-                >
-                  <Box color="primary">
-                    <i className="icon icon-triangle-right-17-2"></i> Watch the
-                    intro video
-                  </Box>
-                </a>
+
                 <Text>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Libero facilis soluta ut, dolor eveniet aperiam temporibus
@@ -52,6 +56,8 @@ const Demo = () => {
                 </Text>
               </Col>
             </Row>
+            <hr />
+            <Text className="text-center">{loc}</Text>
             <hr />
           </Container>
 

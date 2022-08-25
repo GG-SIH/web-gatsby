@@ -11,8 +11,11 @@ import {
   EndSelect,
   StartSelect,
 } from "../../../components/Core";
+import Map2 from "../../../components/WPMap/Map2";
+import { withScriptjs } from "react-google-maps";
 
 const UC2 = (props) => {
+  const MapLoader = withScriptjs(Map2);
   const [service, setService] = useState("");
   const serviceSelector = (event) => {
     setService(event.value);
@@ -85,7 +88,19 @@ const UC2 = (props) => {
             `}
           >
             <Col lg={12} className="position-static">
-              <GoogleMap />
+              {/* <GoogleMap /> */}
+              <MapLoader
+                googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcQSmBY1QhFLMcfDHsIFp5YEgdj6I_Ge8"
+                loadingElement={
+                  <div
+                    style={{ height: `100%` }}
+                    olat={13.0665}
+                    olng={77.598}
+                    dlat={12.97382}
+                    dlng={77.590591}
+                  />
+                }
+              />
             </Col>
           </Row>
         </Container>
