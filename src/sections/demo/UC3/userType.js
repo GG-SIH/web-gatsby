@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 import { Title, Button, Section, Box, Text } from "../../../components/Core";
 import { rgba } from "polished";
-import { Link } from "gatsby";
+import { device } from "../../../utils";
 import GoogleMap from "../../../components/GoogleMap/GoogleMap";
 
 const Card = styled.div`
@@ -17,9 +17,24 @@ const Card = styled.div`
   }
 `;
 
+const ImgRight = styled.img`
+  max-width: 50%;
+  justify-content: center;
+  position: absolute;
+  margin-top: -5%;
+  z-index: 999;
+  @media ${device.sm} {
+    max-width: 60%;
+  }
+  @media ${device.lg} {
+    max-width: 100%;
+  }
+`;
+
 const ServiceSelector = (props) => {
   return (
     <>
+      <ImgRight src={props.userNo} />
       <Card className="text-center justify-content-center align-items-center">
         <Col lg="12" className="position-static">
           <GoogleMap />
