@@ -19,6 +19,7 @@ const Card = styled.div`
 const ServiceSelector = (props) => {
   const sendServiceName = () => {
     let service = props.serviceName;
+
     props.getService(service);
   };
   return (

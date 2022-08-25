@@ -8,7 +8,6 @@ const GlobalProvider = ({ children }) => {
   const [visibleOffCanvas, setVisibleOffCanvas] = useState(false);
   const [headerDark, setHeaderDark] = useState(false);
   const [footerDark, setFooterDark] = useState(true);
-  const [cartTotal, setCartTotal] = useState(3);
 
   const toggleTheme = () => {
     setThemeDark(!themeDark);
@@ -40,13 +39,6 @@ const GlobalProvider = ({ children }) => {
     setFooterDark(false);
   };
 
-  const incCartTotal = () => {
-    setCartTotal(cartTotal + 1);
-  };
-  const decCartTotal = () => {
-    setCartTotal(cartTotal - 1);
-  };
-
   return (
     <GlobalContext.Provider
       value={{
@@ -63,9 +55,6 @@ const GlobalProvider = ({ children }) => {
         visibleOffCanvas,
         toggleOffCanvas,
         closeOffCanvas,
-        cartTotal,
-        incCartTotal,
-        decCartTotal,
       }}
     >
       {children}

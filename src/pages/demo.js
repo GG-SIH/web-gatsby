@@ -1,17 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Hospital from "../sections/services/Hospital";
-import {
-  Title,
-  Button,
-  Section,
-  Box,
-  Text,
-  EndSelect,
-  StartSelect,
-} from "../components/Core";
-import { rgba } from "polished";
-
+import { Title, Section, Text, Box } from "../components/Core";
+import GlobalContext from "../context/GlobalContext";
 import PageWrapper from "../components/PageWrapper";
 import UC1 from "../sections/demo/UC1/UC1";
 import UC2 from "../sections/demo/UC2/UC2";
@@ -25,6 +15,14 @@ const Demo = () => {
     selectedService(serviceName);
   };
 
+  const gContext = useContext(GlobalContext);
+
+  const openUserManual = (e) => {
+    e.preventDefault();
+    gContext.toggleUserManual();
+    console.log("opening modal");
+  };
+
   return (
     <>
       <PageWrapper footerDark>
@@ -36,6 +34,16 @@ const Demo = () => {
                 <div className="banner-content">
                   <Title variant="hero">Save a Life Maps Demo</Title>
                 </div>
+                <a
+                  href="/"
+                  className="text-decoration-none"
+                  onClick={openUserManual}
+                >
+                  <Box color="primary">
+                    <i className="icon icon-triangle-right-17-2"></i> Watch the
+                    intro video
+                  </Box>
+                </a>
                 <Text>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Libero facilis soluta ut, dolor eveniet aperiam temporibus
@@ -45,14 +53,6 @@ const Demo = () => {
               </Col>
             </Row>
             <hr />
-
-            {/* {service === "" ? (
-              ""
-            ) : (
-              <>
-                <UC2 service={service} />
-              </>
-            )} */}
           </Container>
 
           {service === "" ? (
@@ -60,14 +60,21 @@ const Demo = () => {
           ) : (
             <PostConf service={service} />
           )}
+          {service === "" ? (
+            ""
+          ) : (
+            <>
+              <UC2 service={service} />
+            </>
+          )}
 
-          {/* {service === "" ? (
+          {service === "" ? (
             ""
           ) : (
             <>
               <UC3 />
             </>
-          )} */}
+          )}
         </Section>
       </PageWrapper>
     </>

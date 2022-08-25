@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import { rgba } from "polished";
 import { Container, Row, Col } from "react-bootstrap";
-
+import { withScriptjs } from "react-google-maps";
 import { Title, Button, Section, Box, Text } from "../../../components/Core";
 import DetailsCard from "./DetailsCard";
 import GoogleMap from "../../../components/GoogleMap/GoogleMap";
-import GMAP1 from "../../../components/ChooseServiceMap/GMAP1";
+// import Map1 from "../../../components/Map1/Map1";
+import Map2 from "../../../components/Map2/Map2";
 
 const PostConf = (props) => {
+  const MapLoader = withScriptjs(Map2);
   return (
     <>
       <Section>
@@ -36,9 +38,21 @@ const PostConf = (props) => {
           </Row>
         </Container>
         <Row className="justify-content-center align-items-center text-center">
-          <Col sm="12" md="12" lg="12" className="position-static">
+          <Col
+            sm="12"
+            md="12"
+            lg="12"
+            className="position-static"
+            css={`
+              height: 10%;
+            `}
+          >
             {/* <GoogleMap /> */}
-            <GMAP1 />
+            {/* <Map1 /> */}
+            <MapLoader
+              googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcQSmBY1QhFLMcfDHsIFp5YEgdj6I_Ge8"
+              loadingElement={<div style={{ height: `100%` }} />}
+            />
           </Col>
           <DetailsCard
             service={props.service}

@@ -59,16 +59,14 @@ const UC1 = (props) => {
               {text === "-" ? (
                 ""
               ) : (
-                <Link to="http://127.0.0.1:5501/html/ETA.html">
-                  <Button
-                    className="mt-3"
-                    onClick={() => {
-                      props.passService(service);
-                    }}
-                  >
-                    Confirm Selection
-                  </Button>
-                </Link>
+                <Button
+                  className="mt-3"
+                  onClick={() => {
+                    props.passService(service);
+                  }}
+                >
+                  Confirm Selection
+                </Button>
               )}
             </Col>
           </Row>

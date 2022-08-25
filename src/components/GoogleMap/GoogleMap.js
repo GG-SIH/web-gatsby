@@ -48,7 +48,7 @@ const GoogleMap = () => {
         <GoogleMapReact
           bootstrapURLKeys={{ key: `AIzaSyBcQSmBY1QhFLMcfDHsIFp5YEgdj6I_Ge8` }}
           defaultCenter={Loc}
-          defaultZoom={15}
+          defaultZoom={17}
           className="h-100 w-100"
         >
           <LocationPin lat={Loc.lat} lng={Loc.lng} />
