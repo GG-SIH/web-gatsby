@@ -7,7 +7,7 @@ import { Title, Button, Section, Box, Text } from "../../components/Core";
 import GlobalContext from "../../context/GlobalContext";
 
 import { device } from "../../utils";
-import imgL1HeroPhone from "../../assets/image/jpeg/iphoness.jpeg";
+import imgL1HeroPhone from "../../assets/image/um/5.png";
 
 const TopCard = styled(Box)`
   width: 85%;

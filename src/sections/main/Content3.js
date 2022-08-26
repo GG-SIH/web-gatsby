@@ -4,23 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import { Title, Button, Section, Box, Text } from "../../components/Core";
 import { device } from "../../utils";
-import imgContentMobile from "../../assets/image/jpeg/iphoness.jpeg";
-
-const ShapeCard = styled(Box)`
-  width: 85%;
-  box-shadow: ${({ theme }) => `0 32px 34px ${theme.colors.white}`};
-  position: absolute;
-  top: 25%;
-  @media ${device.sm} {
-    left: 7%;
-  }
-  @media ${device.md} {
-    left: 7%;
-  }
-  @media ${device.lg} {
-    left: 7%;
-  }
-`;
+import imgContentMobile from "../../assets/image/um/8.png";
 
 const Content1 = () => (
   <>
@@ -37,39 +21,6 @@ const Content1 = () => (
               >
                 <img src={imgContentMobile} alt="" className="img-fluid" />
               </div>
-
-              <ShapeCard
-                bg="white"
-                p="18px"
-                borderRadius={8}
-                className="d-flex align-items-start"
-                data-aos="fade-right"
-                data-aos-duration="750"
-                data-aos-once="true"
-                data-aos-delay="500"
-              >
-                <Box
-                  width="30px"
-                  minWidth="30px"
-                  height="30px"
-                  minHeight="30px"
-                  bg="secondary"
-                  color="light"
-                  borderRadius="50%"
-                  className="d-flex align-items-center justify-content-center"
-                  mr={3}
-                  mt={2}
-                >
-                  {/* <i className="fas fa-bell"></i> */}
-                  <span>🚑</span>
-                </Box>
-
-                <Box pr="40px">
-                  <Title variant="card" fontWeight={300} mb={0}>
-                    The Ambulance you requested is on it's way
-                  </Title>
-                </Box>
-              </ShapeCard>
             </div>
           </Col>
           <Col lg="8" className="order-lg-1 mt-5 mt-lg-0">
