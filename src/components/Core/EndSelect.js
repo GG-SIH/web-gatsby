@@ -5,9 +5,12 @@ import Select from "react-select";
 
 const defaultOptions = [
   { value: "", label: "Select End Point" },
-  { value: "{13.0306,77.5649}", label: "M S Ramaiah Institute of Technology" },
-  { value: "{13.0328,77.5697}", label: "Milano's" },
-  { value: "{12.973826,77.590591}", label: "Cubbon Park" },
+  {
+    value: "{lat: 13.0306, lng: 77.5649}",
+    label: "M S Ramaiah Institute of Technology",
+  },
+  { value: "{lat: 13.0328, lng: 77.5697}", label: "Milano's" },
+  { value: "{lat: 12.973826, lng: 77.590591}", label: "Cubbon Park" },
 ];
 
 const getCustomStyles = (theme) => {

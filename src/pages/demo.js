@@ -74,13 +74,6 @@ const Demo = () => {
           ) : (
             <>
               <UC2 service={service} />
-            </>
-          )}
-
-          {service === "" ? (
-            ""
-          ) : (
-            <>
               <UC3 />
             </>
           )}

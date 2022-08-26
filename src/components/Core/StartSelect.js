@@ -5,9 +5,12 @@ import Select from "react-select";
 
 const defaultOptions = [
   { value: "", label: "Select Starting Point" },
-  { value: "{13.0283,77.5731}", label: "Truffles" },
-  { value: "{13.0665,77.5980}", label: "Skyline Beverly Park Apartments" },
-  { value: "{13.0147,77.5810}", label: "Mekhri Circle" },
+  { value: "{lat: 13.0283, lng: 77.5731}", label: "Truffles" },
+  {
+    value: "{lat: 13.0665,lng: 77.5980}",
+    label: "Skyline Beverly Park Apartments",
+  },
+  { value: "{lat: 13.0147, lng: 77.5810}", label: "Mekhri Circle" },
 ];
 
 const getCustomStyles = (theme) => {

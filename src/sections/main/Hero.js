@@ -61,8 +61,7 @@ const Hero = () => {
                 <Box className="text-center">
                   <Title variant="hero">Save a Life Maps</Title>
                   <Text mb={4} mt={3}>
-                    To save, or not to save, the descision is yours. <br />-
-                    Unknown
+                    Right Path, Saves lives.
                   </Text>
                 </Box>
               </div>
