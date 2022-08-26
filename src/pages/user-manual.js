@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Title, Section, Text, Box } from "../components/Core";
 import PageWrapper from "../components/PageWrapper";
-import Page0 from "../components/UserManual/Page0";
+import UserManualPages from "../sections/UserManual/UserManual";
 
 const UserManual = () => {
   return (
@@ -17,15 +17,14 @@ const UserManual = () => {
                   <Title variant="hero">
                     Save a Life Maps {"      "}
                     <br />
-                    User Manual
+                    Process Flow
                   </Title>
                 </div>
               </Col>
             </Row>
             <hr />
+            <UserManualPages />
           </Container>
-
-          <Page0 />
         </Section>
       </PageWrapper>
     </>
