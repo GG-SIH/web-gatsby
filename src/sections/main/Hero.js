@@ -128,21 +128,6 @@ const Hero = () => {
               </div>
             </Col>
             <Col lg="12">
-              <div
-                data-aos="fade-right"
-                data-aos-duration="2000"
-                data-aos-once="true"
-                data-aos-delay="2500"
-                css={`
-                  margin-top: 5%;
-                `}
-              >
-                <Box className="text-center">
-                  <div>
-                    <Button mb={3}>Learn More</Button>
-                  </div>
-                </Box>
-              </div>
               <div className="d-flex flex-column align-items-center">
                 <a
                   href="/"
