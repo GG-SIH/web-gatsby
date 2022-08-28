@@ -21,7 +21,7 @@ const UC2 = (props) => {
 
           <Row className="pt-4 pb-4">
             <Col lg={12} className="order-lg-1">
-              <Link to="http://127.0.0.1:5501/html/path.html">
+              <Link to="https://saldemo-2022.web.app/path.html">
                 <Button className="w-100">Visit Demo</Button>
               </Link>
             </Col>
