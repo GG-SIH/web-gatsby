@@ -13,65 +13,56 @@ const ManualData = {
     {
       id: "m1",
       image: P1,
-      pageName: "login",
-      text:
-        "consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyamerat, sed dlam voluptua.",
+      pageName: "Lazy Screen",
+      text: "",
     },
     {
       id: "m2",
       image: P2,
-      pageName: "login",
-      text:
-        "consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyamerat, sed dlam voluptua.",
+      pageName: "Login Screen",
+      text: "",
     },
     {
       id: "m3",
       image: P3,
-      pageName: "login",
-      text:
-        "consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyamerat, sed dlam voluptua.",
+      pageName: "Login / Registration",
+      text: "",
     },
     {
       id: "m4",
       image: P4,
-      pageName: "login",
-      text:
-        "consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyamerat, sed dlam voluptua.",
+      pageName: "Login Authentication Screen",
+      text: "",
     },
     {
       id: "m5",
       image: P5,
-      pageName: "login",
-      text:
-        "consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyamerat, sed dlam voluptua.",
+      pageName: "Home Page",
+      text: "",
     },
     {
       id: "m6",
       image: P6,
-      pageName: "login",
-      text:
-        "consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyamerat, sed dlam voluptua.",
+      pageName: "Emergency Service Selection",
+      text: "",
     },
     {
       id: "m7",
       image: P7,
-      pageName: "login",
-      text:
-        "consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyamerat, sed dlam voluptua.",
+      pageName: "Emergency Service Confirmation along with ETA",
+      text: "",
     },
     {
       id: "m8",
       image: P8,
-      pageName: "login",
-      text:
-        "consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyamerat, sed dlam voluptua.",
+      pageName: "Service Tracking along with Contact Information of Driver",
+      text: "",
     },
     {
       id: "m9",
       image: P9,
-      pageName: "login",
-      text:
-        "consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyamerat, sed dlam voluptua.",
+      pageName: "Login Page for Emergency Service Provider",
+      text: "",
     },
   ],
 };
