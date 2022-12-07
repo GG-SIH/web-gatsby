@@ -14,8 +14,8 @@ class Map2 extends Component {
   componentDidMount() {
     const directionsService = new google.maps.DirectionsService();
 
-    const origin = { lat: 13.0146, lng: 77.583 };
-    const destination = { lat: 13.0306, lng: 77.5649 };
+    const origin = { lat: 13.0665, lng: 77.598 };
+    const destination = { lat: 12.973826, lng: 77.590591 };
 
     directionsService.route(
       {
@@ -45,7 +45,7 @@ class Map2 extends Component {
     return (
       <div>
         <GoogleMapExample
-          containerElement={<div style={{ height: `600px`, width: `100%` }} />}
+          containerElement={<div style={{ height: `800px`, width: `100%` }} />}
           mapElement={<div style={{ height: `100%` }} />}
         />
       </div>

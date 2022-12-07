@@ -92,7 +92,7 @@ const Button = ({
     <ButtonSolid
       color={color}
       border={`1px solid`}
-      borderColor={bg}
+      // borderColor={bg}
       bg={bg}
       {...rest}
     />
