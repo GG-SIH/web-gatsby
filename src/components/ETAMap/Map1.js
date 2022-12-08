@@ -12,10 +12,29 @@ class Map2 extends Component {
   };
 
   componentDidMount() {
+    let originPoints = [
+      { lat: 13.0283, lng: 77.5731 },
+      { lat: 13.0665, lng: 77.598 },
+      { lat: 13.0147, lng: 77.581 },
+      { lat: 13.1989141, lng: 77.7046244 },
+      { lat: 12.986772676715134, lng: 77.5874634998148 },
+    ];
+
+    let destinationPoints = [
+      { lat: 13.0306, lng: 77.5649 },
+      { lat: 13.0328, lng: 77.5697 },
+      { lat: 12.973826, lng: 77.590591 },
+      { lat: 12.951428848506843, lng: 77.58446881669242 },
+      { lat: 12.998281187056858, lng: 77.60079808413852 },
+    ];
+
+    let originPos = Math.round((Math.random() * 10) % 5);
+    let destinationPos = Math.round((Math.random() * 10) % 5);
+
     const directionsService = new google.maps.DirectionsService();
 
-    const origin = { lat: 13.1989141, lng: 77.7046244 };
-    const destination = { lat: 12.973826, lng: 77.590591 };
+    const origin = originPoints[originPos];
+    const destination = destinationPoints[destinationPos];
 
     directionsService.route(
       {
