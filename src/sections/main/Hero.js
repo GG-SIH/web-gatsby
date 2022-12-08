@@ -191,14 +191,10 @@ const Hero = () => {
                       `}
                     />
                   </TopCard>
-
+                </Row>
+                <Row className="justify-content-center align-items-center">
                   <Link href="../demo">
-                    <HeroButton
-                      className="btn-outline-shark ml-2"
-                      css={`
-                        width: 100% !important;
-                      `}
-                    >
+                    <HeroButton className="btn-outline-shark ml-2">
                       Access Demo
                     </HeroButton>
                   </Link>
