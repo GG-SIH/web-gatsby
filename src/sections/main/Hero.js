@@ -77,137 +77,134 @@ const Hero = () => {
     <>
       {/* <!-- Hero Area --> */}
       <Section className="position-relative">
-        <Container>
-          <Row className="justify-content-center align-items-center">
-            <Col
-              sm="12"
-              md="12"
-              lg="12"
-              className="position-static"
-              css={`
-                height: 100%;
-                width: 100%;
-              `}
-            >
-              <MapLoader
-                googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcQSmBY1QhFLMcfDHsIFp5YEgdj6I_Ge8"
-                loadingElement={
-                  <div style={{ height: `100%`, width: `100%` }} />
-                }
-              />
-            </Col>
-            <Col
-              lg="6"
-              className="order-lg-1 position-absolute"
-              css={`
-                background: rgba(17, 17, 17, 0.2);
-                border-radius: 16px;
-                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                backdrop-filter: blur(3px);
-                -webkit-backdrop-filter: blur(3px);
-                border: 1px solid rgba(255, 255, 255, 0.3);
-                padding: 5%;
-                top: 20%;
-              `}
-            >
-              <div>
-                <Box>
-                  <Title variant="hero" className="text-center">
-                    The Right Path, Saves Lives
-                  </Title>
+        <Row className="justify-content-center align-items-center">
+          <Col
+            sm="12"
+            md="12"
+            lg="12"
+            className="position-static"
+            css={`
+              height: 100%;
+              width: 100%;
+            `}
+          >
+            <MapLoader
+              googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcQSmBY1QhFLMcfDHsIFp5YEgdj6I_Ge8"
+              loadingElement={<div style={{ height: `100%`, width: `100%` }} />}
+            />
+          </Col>
+          <Col
+            lg="8"
+            className="order-lg-1 position-absolute"
+            css={`
+              background: rgba(17, 17, 17, 0.2);
+              border-radius: 16px;
+              box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+              backdrop-filter: blur(3px);
+              -webkit-backdrop-filter: blur(3px);
+              border: 1px solid rgba(255, 255, 255, 0.3);
+              padding: 5%;
+              top: 20%;
+            `}
+          >
+            <div>
+              <Box>
+                <Title variant="hero" className="text-center">
+                  The Right Decision could save Lives.
+                </Title>
 
-                  <div className="mt-3 d-flex align-items-center justify-content-center">
-                    <Link href="../obd">
-                      <HeroButton className="btn-outline-shark">
-                        Visit Onboarding
-                      </HeroButton>
-                    </Link>
+                <div className="mt-3 d-flex align-items-center justify-content-center">
+                  <Link href="../obd">
+                    <HeroButton className="btn-outline-shark">
+                      Visit Onboarding
+                    </HeroButton>
+                  </Link>
 
-                    <Link href="../user-manual">
-                      <HeroButton className="btn-outline-shark ml-2">
-                        User Manual
-                      </HeroButton>
-                    </Link>
-                  </div>
+                  <Link href="../user-manual">
+                    <HeroButton className="btn-outline-shark ml-2">
+                      User Manual
+                    </HeroButton>
+                  </Link>
+                </div>
 
-                  <Row className="justify-content-center align-items-center">
-                    <TopCard
-                      p="18px"
-                      borderRadius={8}
-                      className="d-flex align-items-center"
+                <Row className="justify-content-center align-items-center">
+                  <TopCard
+                    p="18px"
+                    borderRadius={8}
+                    className="d-flex align-items-center"
+                  >
+                    <Box
+                      width="30px"
+                      color="light"
+                      borderRadius="50%"
+                      className="d-flex align-items-center justify-content-center"
+                      mr={3}
                     >
-                      <Box
-                        width="30px"
-                        color="light"
-                        borderRadius="50%"
-                        className="d-flex align-items-center justify-content-center"
-                        mr={3}
-                      >
-                        <img
-                          src={arrow}
-                          css={`
-                            max-width: 5%;
-                            @media ${device.sm} {
-                              max-width: 60%;
-                            }
-                            @media ${device.lg} {
-                              max-width: 90%;
-                            }
-                          `}
-                        />
-                      </Box>
-                      <StartSelect
+                      <img
+                        src={arrow}
                         css={`
-                          width: 100%;
+                          max-width: 5%;
+                          @media ${device.sm} {
+                            max-width: 60%;
+                          }
+                          @media ${device.lg} {
+                            max-width: 90%;
+                          }
                         `}
                       />
-                    </TopCard>
+                    </Box>
+                    <StartSelect
+                      css={`
+                        width: 100%;
+                      `}
+                    />
+                  </TopCard>
 
-                    <TopCard
-                      p="18px"
-                      borderRadius={8}
-                      className="d-flex align-items-center"
+                  <TopCard
+                    p="18px"
+                    borderRadius={8}
+                    className="d-flex align-items-center"
+                  >
+                    <Box
+                      width="30px"
+                      color="light"
+                      borderRadius="50%"
+                      className="d-flex align-items-center justify-content-center"
+                      mr={3}
                     >
-                      <Box
-                        width="30px"
-                        color="light"
-                        borderRadius="50%"
-                        className="d-flex align-items-center justify-content-center"
-                        mr={3}
-                      >
-                        <img
-                          src={arrow}
-                          css={`
-                            max-width: 5%;
-                            @media ${device.sm} {
-                              max-width: 60%;
-                            }
-                            @media ${device.lg} {
-                              max-width: 90%;
-                            }
-                          `}
-                        />
-                      </Box>
-                      <EndSelect
+                      <img
+                        src={arrow}
                         css={`
-                          width: 100%;
+                          max-width: 5%;
+                          @media ${device.sm} {
+                            max-width: 60%;
+                          }
+                          @media ${device.lg} {
+                            max-width: 90%;
+                          }
                         `}
                       />
-                    </TopCard>
+                    </Box>
+                    <EndSelect
+                      css={`
+                        width: 100%;
+                      `}
+                    />
+                  </TopCard>
 
-                    <Link href="../demo">
-                      <HeroButton
-                        className="btn-outline-shark ml-2"
-                        css={`
-                          width: 100% !important;
-                        `}
-                      >
-                        Access Demo
-                      </HeroButton>
-                    </Link>
-                  </Row>
+                  <Link href="../demo">
+                    <HeroButton
+                      className="btn-outline-shark ml-2"
+                      css={`
+                        width: 100% !important;
+                      `}
+                    >
+                      Access Demo
+                    </HeroButton>
+                  </Link>
+                </Row>
 
-                  {/* <a
+                {/* <a
                     href="/"
                     className="text-decoration-none mt-5"
                     onClick={openVideoModal}
@@ -217,11 +214,10 @@ const Hero = () => {
                       the intro video
                     </Box>
                   </a> */}
-                </Box>
-              </div>
-            </Col>
-          </Row>
-        </Container>
+              </Box>
+            </div>
+          </Col>
+        </Row>
       </Section>
     </>
   );

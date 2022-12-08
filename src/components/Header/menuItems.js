@@ -4,6 +4,10 @@ export const menuItems = [
     label: "Features",
   },
   {
+    name: "services",
+    label: "Services",
+  },
+  {
     name: "team",
     label: "Team",
   },

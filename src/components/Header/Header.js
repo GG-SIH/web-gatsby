@@ -18,6 +18,7 @@ const SiteHeader = styled.header`
   right: 0;
   width: 100%;
   z-index: 999;
+  opacity: 0.8;
   @media ${device.lg} {
     position: fixed !important;
     transition: 0.4s;
@@ -280,7 +281,6 @@ const Header = ({ isDark = false }) => {
       >
         <Container fluid>
           <nav className="navbar site-navbar offcanvas-active navbar-expand-lg navbar-light">
-            {/* <!-- Brand Logo--> */}
             <div className="brand-logo">
               <Logo white={isDark} />
             </div>
@@ -331,51 +331,7 @@ const Header = ({ isDark = false }) => {
                 </Menu>
               </div>
             </div>
-            <div className="header-btns ml-auto ml-lg-0 d-none d-md-block">
-              <Link href="../obd">
-                <a
-                  className="btn-red"
-                  css={`
-                    &:hover {
-                      transform: translateY(-5px);
-                      cursor: pointer;
-                    }
-                  `}
-                >
-                  Visit Onboarding
-                </a>
-              </Link>
-            </div>
-            <div className="header-btns ml-3 ml-lg-3 d-none d-md-block">
-              <Link href="../demo">
-                <a
-                  className="btn-red"
-                  css={`
-                    &:hover {
-                      transform: translateY(-5px);
-                      cursor: pointer;
-                    }
-                  `}
-                >
-                  Access Demo
-                </a>
-              </Link>
-            </div>
-            <div className="header-btns ml-3 ml-lg-3 d-none d-md-block">
-              <Link href="../user-manual">
-                <a
-                  className="btn-red"
-                  css={`
-                    &:hover {
-                      transform: translateY(-5px);
-                      cursor: pointer;
-                    }
-                  `}
-                >
-                  User Manual
-                </a>
-              </Link>
-            </div>
+
             <ToggleButton
               className={`navbar-toggler btn-close-off-canvas ml-3 ${
                 gContext.visibleOffCanvas ? "collapsed" : ""
