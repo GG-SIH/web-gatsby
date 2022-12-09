@@ -90,6 +90,7 @@ const Hero = () => {
       <Section
         className="position-relative"
         css={`
+          /* -45deg*/
           background: linear-gradient(
             -45deg,
             #eb94a4,
