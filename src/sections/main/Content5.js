@@ -36,8 +36,8 @@ const Content1 = () => (
                 <Title>#5 Coloured Polylines</Title>
                 <Text mb={4}>
                   Provide the User in Transit with a series of{" "}
-                  <i>Coloured Polylines</i> each with a particular meaning.{" "}
-                  <br />
+                  <i>Coloured Polylines</i> each with a particular meaning to
+                  minimise distraction while driving. <br />
                 </Text>
               </Box>
             </div>
