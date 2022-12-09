@@ -62,8 +62,8 @@ const Content1 = () => (
                   a variable distance in front of the incoming emergency service
                   in advance and asks them to be ready to move. <br />2 -
                   Shorter Radius : Informs Vehicles within immediate distance to
-                  move to the left <br />
-                  Vehicles beyond this range will not receive information
+                  move to the left. <br />
+                  Vehicles beyond this range will not receive information.
                 </Text>
               </Box>
             </div>

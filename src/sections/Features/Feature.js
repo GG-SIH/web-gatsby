@@ -1,9 +1,9 @@
 import React from "react";
 import { rgba } from "polished";
 import { Container, Row, Col } from "react-bootstrap";
-
 import { Section, Box, Text } from "../../components/Core";
 
+import dynamicRadius from "../../assets/image/features/notifrange.png";
 const FeatureCard = ({
   color = "light",
   iconName,
