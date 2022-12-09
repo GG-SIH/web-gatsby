@@ -47,23 +47,6 @@ const TopCard = styled(Box)`
   left: 0;
 `;
 
-const BottomCard = styled(Box)`
-  width: 305px;
-  box-shadow: ${({ theme }) => `0 32px 34px ${theme.colors.shadow}`};
-  position: absolute;
-  bottom: 12%;
-  right: 0;
-  @media ${device.md} {
-    right: -13%;
-  }
-  @media ${device.lg} {
-    right: -5%;
-  }
-  @media ${device.xl} {
-    right: -33%;
-  }
-`;
-
 const Hero = () => {
   const gContext = useContext(GlobalContext);
   const MapLoader = withScriptjs(Map);
@@ -75,7 +58,6 @@ const Hero = () => {
 
   return (
     <>
-      {/* <!-- Hero Area --> */}
       <Section className="position-relative">
         <Row className="justify-content-center align-items-center">
           <Col

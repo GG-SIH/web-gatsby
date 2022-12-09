@@ -28,7 +28,7 @@ const getCustomStyles = (theme) => {
             ? `1px solid ${theme.colors.secondary} !important`
             : `1px solid ${theme.colors.border} !important`,
         borderRadius: 10,
-        padding: "1.275rem 1rem",
+        padding: "1rem 1rem",
         outline: "none",
         boxShadow: "none",
       };
