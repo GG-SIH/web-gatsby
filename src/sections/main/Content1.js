@@ -43,6 +43,7 @@ const Content1 = () => (
             </div>
           </Col>
           <Col md="10" lg="4" className="order-lg-2">
+            {/* testing something */}
             <div className="text-center text-lg-left position-relative">
               <div
                 data-aos="fade-down"
