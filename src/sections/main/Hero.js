@@ -17,8 +17,34 @@ import {
 import GlobalContext from "../../context/GlobalContext";
 import { Link } from "gatsby";
 import { device } from "../../utils";
-import imgL1HeroPhone from "../../assets/image/um/5.png";
 import arrow from "../../assets/image/arrow.webp";
+
+/*
+.hero-gradient {
+	background: linear-gradient(-45deg, #ff67b9, #a75bb8, #ff9442, #dcff00, transparent);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+.hero-gradient2 {
+	background: linear-gradient(-135deg, #ff67b9, #a75bb8, #ff9442, #dcff00, transparent);
+	background-size: 400% 400%; 
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+*/
 
 const HeroButton = styled(Button)`
   min-width: 15%;
@@ -58,7 +84,32 @@ const Hero = () => {
 
   return (
     <>
-      <Section className="position-relative">
+      <Section
+        className="position-relative"
+        css={`
+          background: linear-gradient(
+            -45deg,
+            #eb94a4,
+            #da3e4c,
+            #ffffff,
+            #3158a5
+          );
+          background-size: 400% 400%;
+          animation: gradient 15s ease infinite;
+
+          @keyframes gradient {
+            0% {
+              background-position: 0% 50%;
+            }
+            50% {
+              background-position: 100% 50%;
+            }
+            100% {
+              background-position: 0% 50%;
+            }
+          }
+        `}
+      >
         <Row className="justify-content-center align-items-center">
           <Col
             sm="12"
