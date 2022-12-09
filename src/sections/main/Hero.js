@@ -28,7 +28,10 @@ import arrow from "../../assets/image/arrow.webp";
 }
 
 .hero-gradient2 {
-	background: linear-gradient(-135deg, #ff67b9, #a75bb8, #ff9442, #dcff00, transparent);
+	background: linear-gradient(-135deg, #eb94a4,
+            #da3e4c,
+            #ffffff,
+            #3158a5);
 	background-size: 400% 400%; 
 	animation: gradient 15s ease infinite;
 }

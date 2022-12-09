@@ -9,7 +9,19 @@ import imgContentMobile from "../../assets/image/um/6.png";
 const Content1 = () => (
   <>
     {/* <!-- Content section 1 --> */}
-    <Section>
+    <Section
+      css={`
+        background: linear-gradient(
+          -135deg,
+          #eb94a4,
+          #da3e4c,
+          #ffffff,
+          #3158a5
+        );
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+      `}
+    >
       <Container>
         <Row className="align-items-center">
           <Col lg="12" className="mb-5">
