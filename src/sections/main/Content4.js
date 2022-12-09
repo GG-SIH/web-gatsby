@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import { Title, Button, Section, Box, Text } from "../../components/Core";
 import { device } from "../../utils";
-import dyanamicRadius from "../../assets/image/features/notifrange.png";
+import smartNotifs from "../../assets/image/features/smartdir.png";
 
 const Content1 = () => (
   <>
@@ -20,8 +20,8 @@ const Content1 = () => (
               data-aos-once="true"
             >
               <img
-                src={dyanamicRadius}
-                alt="Dynamic Radius"
+                src={smartNotifs}
+                alt="Smart Notifications"
                 className="img-fluid"
               />
             </div>
@@ -34,16 +34,11 @@ const Content1 = () => (
             data-aos-once="true"
           >
             <Box>
-              <Title>#2 Dynamic Radius</Title>
+              <Title>#4 Smart Notifications</Title>
               <Text mb={4}>
-                Keeping in mind factors such as Driver Experience and Response
-                Time, SAL Maps maintains a pair of radii for every emergency
-                service en route. <br />1 - Wider Radius : Informs Vehicles at a
-                variable distance in front of the incoming emergency service in
-                advance and asks them to be ready to move. <br />2 - Shorter
-                Radius : Informs Vehicles within immediate distance to move to
-                the left. <br />
-                Vehicles beyond this range will not receive information.
+                In Multi-Laned Roads, notifications are sent only to those
+                vehicles fall within the Dynamic Radius <i>and</i> are moving in
+                the same direction.
               </Text>
             </Box>
           </div>

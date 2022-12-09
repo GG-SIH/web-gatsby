@@ -29,6 +29,7 @@ import Prizes from "../sections/main/Prizes";
 import Content1 from "../sections/main/Content1";
 import Content2 from "../sections/main/Content2";
 import Content3 from "../sections/main/Content3";
+import Content4 from "../sections/main/Content4";
 import Fact from "../sections/main/Fact";
 
 import PageWrapper from "../components/PageWrapper";
@@ -42,6 +43,7 @@ const IndexPage = () => {
         <Content1 />
         <Content2 />
         <Content3 />
+        <Content4 />
         <Fact />
       </PageWrapper>
     </>
