@@ -5,7 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Title, Button, Section, Box, Text } from "../../components/Core";
 import { device } from "../../utils";
 // import imgContentMobile from "../../assets/image/um/6.png";
-import dyanamicRadius from "../../assets/image/features/notifrange.png";
+import ServiceSelector from "../../assets/image/features/selectservice.png";
 
 const Content1 = () => (
   <>
@@ -40,8 +40,8 @@ const Content1 = () => (
                 data-aos-once="true"
               >
                 <img
-                  src={dyanamicRadius}
-                  alt="Dynamic Radius Figure"
+                  src={ServiceSelector}
+                  alt="Service Selection"
                   className="img-fluid"
                 />
               </div>
@@ -54,16 +54,9 @@ const Content1 = () => (
               data-aos-once="true"
             >
               <Box>
-                <Title>#1 Dynamic Radius</Title>
+                <Title>#1 Service Selection</Title>
                 <Text mb={4}>
-                  Keeping in mind factors such as Driver Experience and Response
-                  Time, SAL Maps maintains a pair of radii for every emergency
-                  service en route. <br />1 - Wider Radius : Informs Vehicles at
-                  a variable distance in front of the incoming emergency service
-                  in advance and asks them to be ready to move. <br />2 -
-                  Shorter Radius : Informs Vehicles within immediate distance to
-                  move to the left. <br />
-                  Vehicles beyond this range will not receive information.
+                  Have the Option to call an Ambulance, Fire Truck or, Both.
                 </Text>
               </Box>
             </div>
