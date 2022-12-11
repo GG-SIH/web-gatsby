@@ -21,9 +21,9 @@ const Feature = () => {
                 data-aos-delay="500"
               >
                 <Box className="text-center">
-                  <Title variant="hero">Features</Title>
+                  <Title variant="hero">Why choose us? </Title>
                   <Text mb={4} mt={3}>
-                    How do we stand out?
+                    we'll give you 18 reasons why. eighteen
                   </Text>
                 </Box>
               </div>
