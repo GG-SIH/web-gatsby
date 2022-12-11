@@ -21,11 +21,11 @@ const FeatureCard = ({ number, text }) => (
 
 const Feature = () => {
   const features = [
+    `Is everything Google Maps is +`,
     `Onboarding Form Available for Hospitals and other Services, where
   they can register themselves with the App.`,
     `Handles the 2-way or Junction Edge Case`,
     `Provision of Selection of Required Emergency Service in Web as well as Mobile App`,
-    `Is everything Google Maps is`,
     `ETA Page which keeps the user in need, updated on every detail`,
     `Availability of Contact, GPS and Registration Info of the Service to the User`,
     `Novel Path Clearance Algorithm`,
