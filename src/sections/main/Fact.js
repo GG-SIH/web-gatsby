@@ -17,36 +17,46 @@ const SectionStyled = styled(Section)`
 const Fact = () => (
   <>
     {/* <!-- Fact section 1 --> */}
-    <SectionStyled pt={0}>
+    <SectionStyled className="mt-4">
       <Container>
-        <Row className="text-center">
-          <Col md="4">
+        <Row
+          className="d-flex text-center"
+          css={`
+            justify-content: space-between;
+          `}
+        >
+          <Col md="6">
             <Box>
-              <Title>30%📉</Title>
+              <Title>
+                30%{" "}
+                <b
+                  css={`
+                    color: green;
+                  `}
+                >
+                  decrease
+                </b>
+              </Title>
               <Text>
-                Reduction in # of deaths ever since travellers have allowed way
-                for ambulances to travel.
+                in # of deaths ever since travellers have allowed way for
+                ambulances to travel.
               </Text>
             </Box>
           </Col>
-          <Col md="4">
+
+          <Col md="6">
             <Box>
-              <img
-                src={Request}
-                alt="Feature 2"
-                css={`
-                  width: 50%;
-                `}
-              />
-              <Title variant="secSm">
-                Incredibly Committed to Saving Lives
+              <Title>
+                3%{" "}
+                <b
+                  css={`
+                    color: green;
+                  `}
+                >
+                  decrease
+                </b>
               </Title>
-            </Box>
-          </Col>
-          <Col md="4">
-            <Box>
-              <Title>3%📉</Title>
-              <Text>Reduction of Road Accidents caused by Drivers</Text>
+              <Text> in Road Accidents caused by Drivers</Text>
             </Box>
           </Col>
         </Row>
