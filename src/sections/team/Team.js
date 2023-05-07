@@ -8,7 +8,7 @@ import t1 from "../../assets/image/abhi.jpg";
 import t2 from "../../assets/image/daya.webp";
 import t3 from "../../assets/image/fred.jpg";
 import t4 from "../../assets/image/acp.jpg";
-import t5 from "../../assets/image/vivk.jpg";
+import t5 from "../../assets/sanjaysir.jpeg";
 import t6 from "../../assets/image/salu.jpg";
 
 const CardImage = styled.div`
@@ -53,18 +53,13 @@ const Team = () => (
       <Container>
         <Row className="align-items-center justify-content-center">
           <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
+            <TeamCard userImg={t5} title="Dr. Sanjay H A">
+              Guide
+            </TeamCard>
+          </Col>
+          <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
             <TeamCard userImg={t3} title="Anusha Chaturvedi">
               Team Leader, Full Stack Engineer
-            </TeamCard>
-          </Col>
-          <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
-            <TeamCard userImg={t5} title="Benny Nandha Dharshan G">
-              Full Stack Engineer
-            </TeamCard>
-          </Col>
-          <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
-            <TeamCard userImg={t2} title="Ankita M Thakur">
-              Backend Engineer
             </TeamCard>
           </Col>
           <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
@@ -73,8 +68,13 @@ const Team = () => (
             </TeamCard>
           </Col>
           <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
-            <TeamCard userImg={t4} title="Brihadeesh R K">
-              Full Stack Engineer
+            <TeamCard userImg={t2} title="Ankita M Thakur">
+              Backend Engineer
+            </TeamCard>
+          </Col>
+          <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
+            <TeamCard userImg={t4} title="Anushka Mittal">
+              Kubernetes Engineer
             </TeamCard>
           </Col>
           <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">

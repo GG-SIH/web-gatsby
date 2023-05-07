@@ -1,0 +1,13 @@
+.simulation-alert {
+    width: 30%;
+    position: absolute;
+    top: 25%;
+    background: #00aed1;
+    font-weight: 700;
+    padding: 20px;
+    border-radius: 6pt;
+}
+
+.hidden {
+    display: none;
+}

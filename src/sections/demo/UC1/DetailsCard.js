@@ -57,7 +57,7 @@ const DetailsCard = (props) => {
                 `}
               >
                 {" "}
-                {Math.floor(Math.random() * 20)}
+                23
               </span>{" "}
               minute(s)
             </p>

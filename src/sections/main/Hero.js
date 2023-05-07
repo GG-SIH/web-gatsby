@@ -126,7 +126,7 @@ const Hero = () => {
             `}
           >
             <MapLoader
-              googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcQSmBY1QhFLMcfDHsIFp5YEgdj6I_Ge8"
+              googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8duqmgKujdQzDlmAnJqHA6G_htRlvrgs"
               loadingElement={<div style={{ height: `100%`, width: `100%` }} />}
             />
           </Col>
@@ -162,91 +162,18 @@ const Hero = () => {
                       User Manual
                     </HeroButton>
                   </Link>
-                </div>
 
-                <Row className="justify-content-center align-items-center">
-                  <TopCard
-                    p="18px"
-                    borderRadius={8}
-                    className="d-flex align-items-center"
-                  >
-                    <Box
-                      width="30px"
-                      color="light"
-                      borderRadius="50%"
-                      className="d-flex align-items-center justify-content-center"
-                      mr={3}
-                    >
-                      <img
-                        src={arrow}
-                        css={`
-                          max-width: 5%;
-                          @media ${device.sm} {
-                            max-width: 60%;
-                          }
-                          @media ${device.lg} {
-                            max-width: 90%;
-                          }
-                        `}
-                      />
-                    </Box>
-                    <StartSelect
-                      css={`
-                        width: 100%;
-                      `}
-                    />
-                  </TopCard>
-
-                  <TopCard
-                    p="18px"
-                    borderRadius={8}
-                    className="d-flex align-items-center"
-                  >
-                    <Box
-                      width="30px"
-                      color="light"
-                      borderRadius="50%"
-                      className="d-flex align-items-center justify-content-center"
-                      mr={3}
-                    >
-                      <img
-                        src={arrow}
-                        css={`
-                          max-width: 5%;
-                          @media ${device.sm} {
-                            max-width: 60%;
-                          }
-                          @media ${device.lg} {
-                            max-width: 90%;
-                          }
-                        `}
-                      />
-                    </Box>
-                    <EndSelect
-                      css={`
-                        width: 100%;
-                      `}
-                    />
-                  </TopCard>
-                </Row>
-                <Row className="justify-content-center align-items-center">
                   <Link href="../demo">
                     <HeroButton className="btn-outline-shark ml-2">
-                      Access Demo
+                      Access SOS Button Demo
                     </HeroButton>
                   </Link>
-                </Row>
-
-                {/* <a
-                    href="/"
-                    className="text-decoration-none mt-5"
-                    onClick={openVideoModal}
-                  >
-                    <Box color="secondary">
-                      <i className="icon icon-triangle-right-17-2"></i> Watch
-                      the intro video
-                    </Box>
-                  </a> */}
+                  <Link href="../simulation">
+                    <HeroButton className="btn-outline-shark ml-2">
+                      Access Simulation
+                    </HeroButton>
+                  </Link>
+                </div>
               </Box>
             </div>
           </Col>

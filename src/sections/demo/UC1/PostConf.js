@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { withScriptjs } from "react-google-maps";
 import { Title, Button, Section, Box, Text } from "../../../components/Core";
 import DetailsCard from "./DetailsCard";
-import Map from "../../../components/ETAMap/Map1";
+import Map from "../../../components/ETAMap/Map2";
 
 const PostConf = (props) => {
   const MapLoader = withScriptjs(Map);
@@ -47,7 +47,7 @@ const PostConf = (props) => {
             `}
           >
             <MapLoader
-              googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcQSmBY1QhFLMcfDHsIFp5YEgdj6I_Ge8"
+              googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8duqmgKujdQzDlmAnJqHA6G_htRlvrgs"
               loadingElement={<div style={{ height: `100%` }} />}
             />
           </Col>
